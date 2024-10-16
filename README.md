@@ -13,7 +13,7 @@ Thank you for considering contributing to the Calculator Pro project! Here are t
    - Please create a different branch for your pull request (PR). This helps in keeping the main branch clean and organized.
 3. **Available Features to Build**
    - Below is a checklist of features that are available for development. Please check off any feature that you plan to work on:
-   - [ ] Area
+   - [x] Area
    - [x] BMI 
    - [ ] Temperature
    - [ ] Discount
