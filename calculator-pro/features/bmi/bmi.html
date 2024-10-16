@@ -9,11 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Toggle for dark mode  -->
-        <label class="switch">
-            <input type="checkbox" id="darkModeToggle">
-            <span class="slider round"></span>
-        </label>
+
 
         <!-- Title for the calculator -->
         <h1 class="Title">BMI Calculator</h1>
@@ -31,12 +27,12 @@
 
             <!-- height units selection-->
             <select id="units" name="units">
-                <option value="cm">Centimeters</option>
                 <option value="m">Meters</option>
+                <option value="cm">Centimeters</option>
             </select>
             <br>
 
-            <label for="weight">Enter your weight (kg): </label>
+            <label for="weight">Enter your weight: </label>
             <input type="text" id="weight" name="weight" min="0" step="any" required>
         </div>
 
@@ -56,19 +52,6 @@
             <li><span class="bold">Overweight:</span> BMI 25–29.9</li>
             <li><span class="bold">Obesity:</span> BMI ≥ 30</li>
         </ul>
-
-        <!--BMI meaning -->
-        <p class="description">
-            Body Mass Index (BMI) is a numerical value derived from an individual's weight and height 
-            that is used to assess body fat and categorize weight status. Calculated by dividing a person's 
-            weight in kilograms by the square of their height in meters (BMI = weight (kg) / height² (m²)), 
-            this simple formula provides a reliable indicator of whether a person is underweight, normal weight, 
-            overweight, or obese. BMI serves as a useful screening tool for health professionals to identify potential 
-            weight-related health issues, such as heart disease, diabetes, and hypertension. To use the BMI calculator, 
-            simply input your weight and height into the designated fields, select your preferred height unit (centimeters or meters), 
-            and click the "Calculate BMI" button. The calculator will then display your BMI value along with a corresponding weight category, 
-            helping you understand your body composition and guiding you toward making informed health and lifestyle choices.
-        </p>
     </div>
 
     
