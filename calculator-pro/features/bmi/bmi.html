@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+    <link rel="icon" href="bmiimg.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <!-- Toggle for dark mode  -->
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+
+        <!-- Title for the calculator -->
+        <h1 class="Title">BMI Calculator</h1>
+        
+        <!-- BMI Image -->
+        <img id="bmi-img" src="bmiimg.png" alt="BMI Calculator">
+
+        <!-- Equation display -->
+        <p id="BMI-equation">BMI = weight (kg) / height² (m²)</p>
+
+        <!-- Input for height and weight -->
+        <div id="inputsection">
+            <label for="height">Enter your height: </label>
+            <input type="text" id="height" name="height" min="0" step="any" required>
+
+            <!-- height units selection-->
+            <select id="units" name="units">
+                <option value="cm">Centimeters</option>
+                <option value="m">Meters</option>
+            </select>
+            <br>
+
+            <label for="weight">Enter your weight (kg): </label>
+            <input type="text" id="weight" name="weight" min="0" step="any" required>
+        </div>
+
+        <br><br>
+
+        <!-- BMI calculation buttopn -->
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <!-- Result -->
+        <div class="result" id="bmiResult">Your BMI: </div>
+
+        <!-- BMI Categories-->
+        <h3>BMI Categories</h3>
+        <ul>
+            <li><span class="bold">Underweight:</span> BMI &lt; 18.5</li>
+            <li><span class="bold">Normal weight:</span> BMI 18.5–24.9</li>
+            <li><span class="bold">Overweight:</span> BMI 25–29.9</li>
+            <li><span class="bold">Obesity:</span> BMI ≥ 30</li>
+        </ul>
+
+        <!--BMI meaning -->
+        <p class="description">
+            Body Mass Index (BMI) is a numerical value derived from an individual's weight and height 
+            that is used to assess body fat and categorize weight status. Calculated by dividing a person's 
+            weight in kilograms by the square of their height in meters (BMI = weight (kg) / height² (m²)), 
+            this simple formula provides a reliable indicator of whether a person is underweight, normal weight, 
+            overweight, or obese. BMI serves as a useful screening tool for health professionals to identify potential 
+            weight-related health issues, such as heart disease, diabetes, and hypertension. To use the BMI calculator, 
+            simply input your weight and height into the designated fields, select your preferred height unit (centimeters or meters), 
+            and click the "Calculate BMI" button. The calculator will then display your BMI value along with a corresponding weight category, 
+            helping you understand your body composition and guiding you toward making informed health and lifestyle choices.
+        </p>
+    </div>
+
+    
+    <script src="bmi.js"></script>
+</body>
+</html>
