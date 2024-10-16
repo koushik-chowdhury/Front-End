@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Area Calculator</title>
-</head>
-<body>
-    <h1>Area Calculator</h1>
-    <a href="../../index.html">
-        <p>Home</p>
-    </a>
-
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <div class="container">
+        <h2>Area Calculator (m<sup>2</sup>)</h2>
+        <div class="form">
+          <input
+            type="text"
+            name=""
+            id="length"
+            placeholder="Enter Lengh"
+            autocomplete="off"
+            inputmode="numeric"
+          />
+          <input
+            type="text"
+            name=""
+            id="width"
+            placeholder="Enter width"
+            autocomplete="off"
+            inputmode="numeric"
+          />
+        </div>
+        <div class="buttons">
+          <button type="submit" id="submit">Submit</button>
+          <button type="submit" id="home">Home</button>
+        </div>
+        <!-- <a href="../../../index.html">
+          <p>Back to Home</p>
+        </a> -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
