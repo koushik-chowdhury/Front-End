@@ -5,37 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="bmi.css">
+    <link rel="icon" href="bmiimg.png" type="image/png">
 </head>
 <body>
     <div class="container">
-        <h1 class="Title">BMI Calculator</h1>
-        <img id="bmi-img" src="bmi.png" alt="BMI Calculator">
+        <!-- Toggle for dark mode  -->
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
 
-        <p>BMI = weight (kg) / height² (m²)</p>
-        <div id = "inputsection">
-          <label for="height">Enter your height: </label>
-          <input type="number" id="height" name="height" min="0" step="any" required>
-          <select id="units" name="units">
-              <option value="cm">Centimeters</option>
-              <option value="m">Meters</option>
-          </select>
-          <br>
-          <label for="weight">Enter your weight (kg): </label>
-          <input type="number" id="weight" name="weight" min="0" step="any" required>
+        <!-- Title for the calculator -->
+        <h1 class="Title">BMI Calculator</h1>
+        
+        <!-- BMI Image -->
+        <img id="bmi-img" src="bmiimg.png" alt="BMI Calculator">
+
+        <!-- Equation display -->
+        <p id="BMI-equation">BMI = weight (kg) / height² (m²)</p>
+
+        <!-- Input for height and weight -->
+        <div id="inputsection">
+            <label for="height">Enter your height: </label>
+            <input type="text" id="height" name="height" min="0" step="any" required>
+
+            <!-- height units selection-->
+            <select id="units" name="units">
+                <option value="cm">Centimeters</option>
+                <option value="m">Meters</option>
+            </select>
+            <br>
+
+            <label for="weight">Enter your weight (kg): </label>
+            <input type="text" id="weight" name="weight" min="0" step="any" required>
         </div>
+
         <br><br>
 
+        <!-- BMI calculation buttopn -->
         <button onclick="calculateBMI()">Calculate BMI</button>
 
+        <!-- Result -->
         <div class="result" id="bmiResult">Your BMI: </div>
+
+        <!-- BMI Categories-->
         <h3>BMI Categories</h3>
         <ul>
-            <li><span class ="bold">Underweight:</span> BMI &lt; 18.5</li>
-            <li><span class ="bold">Normal weight:</span> BMI 18.5–24.9</li>
-            <li><span class ="bold">Overweight:</span> BMI 25–29.9</li>
-            <li><span class ="bold">Obesity:</span> BMI ≥ 30</li>
+            <li><span class="bold">Underweight:</span> BMI &lt; 18.5</li>
+            <li><span class="bold">Normal weight:</span> BMI 18.5–24.9</li>
+            <li><span class="bold">Overweight:</span> BMI 25–29.9</li>
+            <li><span class="bold">Obesity:</span> BMI ≥ 30</li>
         </ul>
 
+        <!--BMI meaning -->
         <p class="description">
             Body Mass Index (BMI) is a numerical value derived from an individual's weight and height 
             that is used to assess body fat and categorize weight status. Calculated by dividing a person's 
@@ -48,6 +70,8 @@
             helping you understand your body composition and guiding you toward making informed health and lifestyle choices.
         </p>
     </div>
+
+    
     <script src="bmi.js"></script>
 </body>
 </html>
