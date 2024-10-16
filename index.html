@@ -47,5 +47,50 @@
         </div>
       </div>
     </div>
+    <div class="contributer-list">
+      <h2>Our Contributers</h2>
+      <div class="contributers" id="contributer">
+      </div>
+    </div>
+
+
+
+    <script>
+      // Fetch contributors from the GitHub API
+      async function fetchContributors() {
+        const owner = 'koushik-chowdhury';
+        const repo = 'Front-End';
+        const url = `https://api.github.com/repos/${owner}/${repo}/contributors`;
+      
+        try {
+          const response = await fetch(url);
+          const contributors = await response.json();
+      
+          // Select the contributer div
+          const contributerDiv = document.getElementById('contributer');
+      
+          contributors.forEach(contributor => {
+            // Create a new div for each contributor
+            const contributorElement = document.createElement('div');
+            contributorElement.classList.add('contributor');
+      
+            // Add contributor info (avatar, username, and link to profile)
+            contributorElement.innerHTML = `
+              <img src="${contributor.avatar_url}" alt="${contributor.login}" width="50" height="50">
+              <p><a href="${contributor.html_url}" target="_blank">${contributor.login}</a></p>
+            `;
+      
+            // Append the contributor to the contributer div
+            contributerDiv.appendChild(contributorElement);
+          });
+        } catch (error) {
+          console.error('Error fetching contributors:', error);
+        }
+      }
+      
+      // Call the function to fetch contributors when the page loads
+      fetchContributors();
+      </script>
+      
   </body>
 </html>
