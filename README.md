@@ -12,7 +12,7 @@ Thank you for considering contributing to the Calculator Pro project! Here are t
 3. **Available Features to Build**
    - Below is a checklist of features that are available for development. Please check off any feature that you plan to work on:
    - [ ] Area
-   - [ ] BMI
+   - [x] BMI 
    - [ ] Temperature
    - [ ] Discount
    - [ ] Length
