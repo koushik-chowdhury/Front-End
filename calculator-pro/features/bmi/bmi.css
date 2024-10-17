@@ -1,150 +1,80 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    background-color: #0B0B0B;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  background-color: #1a1a1a;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: medium;
 }
 /*
 Make it more calculator like
 */
 .container {
-    background-color: white;
-    color: black;
-    border-radius: 20px; 
-    padding: 20px; 
-    max-width: 600px;
-    margin: 50px auto; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  background-color: rgb(42, 42, 42);
+  color: white;
+  border-radius: 20px; 
+  padding: 20px; 
+  max-width: 600px;
+  margin: 50px auto; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .Title {
-    color: #0B0B0B; 
+  color: white; 
 }
 
 #bmi-img {
-    width: 50%; 
-    height: auto; 
-    margin-bottom: 15px;
+  width: 50%; 
+  height: auto; 
+  margin-bottom: 15px;
 }
 #inputsection{
-    margin-left: 10px;
-    text-align: left;
+  margin-left: 10px;
+  text-align: left;
 }
 input[type="text"], select {
-    padding: 12px 15px;
-    border-radius: 10px;
-    border: 2px solid #007BFF; 
-    margin-bottom: 10px; 
-    font-size: 1em;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    background-color: #f8f9fa;
-}
-.description {
-    max-width: 600px; 
-    margin: 0 auto; 
-    padding: 10px; 
-    line-height: 1.5; 
-    text-align: left; 
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #007BFF; 
+  margin-bottom: 10px; 
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #f8f9fa;
 }
 
 .result {
-    font-size: 1.5em;
-    margin-top: 20px;
-    color: #007BFF;
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #007BFF;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 25px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 h3 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 ul li {
-    margin: 5px 0;
+  margin: 5px 0;
 }
-.bold{
-    font-weight: bold;
-}
-/* The switch - the box around the slider */
-.switch {
-    margin-left: 90%;
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #333333;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
 
+.bold{
+  font-weight: bold;
+}
