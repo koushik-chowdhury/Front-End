@@ -6,7 +6,6 @@
     <title>Calculator Pro</title>
     <link rel="stylesheet" href="calculator-pro/style.css" />
     <link rel="icon" href="calculator-pro/image/budget.png" type="image/png">
-
   </head>
   <body>
     <a href="index.html">
@@ -20,79 +19,70 @@
         <span>k</span>
       </h3>
     </a>
-    <div class="flex">
+    <div class="main">
       <div class="container">
         <h2>All in one Calculator</h2>
-        <div class="calculator">
-          <img src="calculator-pro/image/area-graph.png" alt="area" />
-          <a href="calculator-pro/features/area/area.html" class="hidden">Area</a>
-        </div>
-        <div class="calculator">
-          <img src="calculator-pro/image/bmi.png" alt="BMI" />
-          <a href="calculator-pro/features/bmi/bmi.html" class="hidden">BMI</a>
-        </div>
-        <div class="calculator">
-          <img src="calculator-pro/image/temperature-check.png" alt="temperature" />
-          <a href="calculator-pro/features/temperature/temperature.html" class="hidden">temperature</a>
-        </div>
-        <div class="calculator">
-          <img src="calculator-pro/image/discount.png" alt="Discount" />
-          <a href="calculator-pro/features/discount/discount.html" class="hidden">Discount</a>
-        </div>
-        <div class="calculator">
-          <img src="calculator-pro/image/measuring-tape.png" alt="measuring-tape" />
-          <a href="calculator-pro/features/length/length.html" class="hidden">Length</a>
-        </div>
-        <div class="calculator">
-          <img src="calculator-pro/image/mass.png" alt="Mass" />
-          <a href="calculator-pro/features/mass/mass.html" class="hidden">Mass</a>
+        <div class="Insidecontainer">
+          <div class="calculator">
+            <img src="calculator-pro/image/area-graph.png" alt="area" />
+            <a href="calculator-pro/features/area/area.html" class="hidden">Area</a>
+          </div>
+          <div class="calculator">
+            <img src="calculator-pro/image/bmi.png" alt="BMI" />
+            <a href="calculator-pro/features/bmi/bmi.html" class="hidden">BMI</a>
+          </div>
+          <div class="calculator">
+            <img src="calculator-pro/image/temperature-check.png" alt="temperature" />
+            <a href="calculator-pro/features/temperature/temperature.html" class="hidden">temperature</a>
+          </div>
+          <div class="calculator">
+            <img src="calculator-pro/image/discount.png" alt="Discount" />
+            <a href="calculator-pro/features/discount/discount.html" class="hidden">Discount</a>
+          </div>
+          <div class="calculator">
+            <img src="calculator-pro/image/measuring-tape.png" alt="measuring-tape" />
+            <a href="calculator-pro/features/length/length.html" class="hidden">Length</a>
+          </div>
+          <div class="calculator">
+            <img src="calculator-pro/image/mass.png" alt="Mass" />
+            <a href="calculator-pro/features/mass/mass.html" class="hidden">Mass</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="contributer-list">
-      <h2>Our Contributers</h2>
-      <div class="contributers" id="contributer">
+      <div class="contributer-list">
+        <h2>Our Contributors</h2>
+        <div class="contributers" id="contributer"></div>
       </div>
+  
     </div>
-
-
-
+    
     <script>
-      // Fetch contributors from the GitHub API
       async function fetchContributors() {
         const owner = 'koushik-chowdhury';
         const repo = 'Front-End';
         const url = `https://api.github.com/repos/${owner}/${repo}/contributors`;
-      
+
         try {
           const response = await fetch(url);
           const contributors = await response.json();
-      
-          // Select the contributer div
           const contributerDiv = document.getElementById('contributer');
-      
+
           contributors.forEach(contributor => {
-            // Create a new div for each contributor
             const contributorElement = document.createElement('div');
             contributorElement.classList.add('contributor');
-      
-            // Add contributor info (avatar, username, and link to profile)
+
             contributorElement.innerHTML = `
               <img src="${contributor.avatar_url}" alt="${contributor.login}" width="50" height="50">
               <p><a href="${contributor.html_url}" target="_blank">${contributor.login}</a></p>
             `;
-      
-            // Append the contributor to the contributer div
+
             contributerDiv.appendChild(contributorElement);
           });
         } catch (error) {
           console.error('Error fetching contributors:', error);
         }
       }
-      
-      // Call the function to fetch contributors when the page loads
       fetchContributors();
-      </script>
-      
+    </script>
   </body>
 </html>
