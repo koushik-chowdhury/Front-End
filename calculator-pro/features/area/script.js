@@ -47,7 +47,7 @@ function Area() {
 
     // Create a paragraph element for the area text
     const divContent = document.createElement("p");
-    divContent.innerHTML = `Area is ${area} m<sup>2</sup>`; // Set the text content
+    divContent.innerHTML = `Area is ${area} unit<sup>2</sup>`; // Set the text content
 
     // Append the paragraph to the div
     areaDiv.appendChild(divContent);

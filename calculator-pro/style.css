@@ -63,7 +63,7 @@ img {
 }
 @media screen and (max-width: 600px) {
   .container {
-    width: 300px;
+    width: 100%;
   }
   .calculator {
     padding: 8px;
@@ -135,4 +135,18 @@ h3 span:nth-child(odd) {
 
 .contributor a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    height: 100%;
+  }
+  .contributer-list {
+    left: 0px;
+    top: 60%;
+    width: 100%;
+    margin-top: 0px;
+    padding: 20px;
+  }
+ 
 }
