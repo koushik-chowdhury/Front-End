@@ -1,83 +1,82 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    /* border: 1px solid red; */
-    color: #fff;
-  }
-  a {
-    text-decoration: none;
-    font-size: 0.8rem;
-    background-color: #7fffd4;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  a p{
-    color: #131212;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  body {
-    background-color: #1a1a1a;
-  }
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 30px;
-    width: 300px;
-    border-radius: 8px;
-    padding-bottom: 3rem;
-    background-color: #2a2a2a;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  }
-  .form{
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-.container input[type=text]{
-    padding: 12px;
-    border-radius: 5px;
-    border: none;
-    background-color: #3a3a3a;
-    width: 250px;
-  }
-.buttons button{
-    padding: 6px 4px;
-    width: 100px;
-    background-color: #00ff62;
-    color: #000000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid red; */
+  color: #fff;
 }
-.buttons #home{
-  background-color: #FFD700;
+a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  background-color: #7fffd4;
+  padding: 5px;
+  border-radius: 5px;
+}
+a p {
+  color: #131212;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body {
+  background-color: #1a1a1a;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 30px;
+  width: 350px;
+  border-radius: 8px;
+  padding-bottom: 3rem;
+  background-color: #2a2a2a;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container input[type="text"] {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3a3a3a;
+  width: 250px;
+}
+.buttons button {
+  padding: 6px 4px;
+  width: 100px;
+  background-color: #00ff62;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons #home {
+  background-color: #ffd700;
   color: #000000;
 }
-.divStyle{
+.divStyle {
   background-color: #2a2a2a;
-  padding: 23px;
-  width: auto;
-  /* position: absolute; */
-  /* top: 50%;
-  left: calc(); */
+  padding: 15px;
+  width: 200px;
+  position: absolute;
+  top: 70%;
+  left: 43.6%;
   border-radius: 5px;
   /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;   */
   box-shadow: inset rgba(3, 102, 214, 0.3) 1px 1px 10px 3px;
   text-align: center;
   transition: 0.4s ease-out;
-  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -86,7 +85,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-
   }
   .container {
     display: flex;
@@ -101,7 +99,7 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 
-  .container input[type=text]{
+  .container input[type="text"] {
     padding: 20px;
     border-radius: 5px;
     border: none;
@@ -109,7 +107,7 @@
     width: 300px;
     font-size: 1rem;
   }
-.buttons button{
+  .buttons button {
     padding: 15px 10px;
     width: 150px;
     background-color: #00ff62;
@@ -117,5 +115,19 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+  }
+  .divStyle {
+    background-color: #2a2a2a;
+    padding: 23px;
+    width: auto;
+    /* position: absolute; */
+    /* top: 50%;
+  left: calc(); */
+    border-radius: 5px;
+    /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;   */
+    box-shadow: inset rgba(3, 102, 214, 0.3) 1px 1px 10px 3px;
+    text-align: center;
+    transition: 0.4s ease-out;
+    font-size: 1.3rem;
+  }
 }
